@@ -13,6 +13,7 @@
 		4481D04627F2E0E300384E4C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4481D04427F2E0E300384E4C /* Main.storyboard */; };
 		4481D04827F2E0E500384E4C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4481D04727F2E0E500384E4C /* Assets.xcassets */; };
 		4481D04B27F2E0E500384E4C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4481D04927F2E0E500384E4C /* LaunchScreen.storyboard */; };
+		44C7A86927F2EC9000333062 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 44C7A86827F2EC9000333062 /* GoogleService-Info.plist */; };
 		A9B4135EC9E89C2F7933B9A3 /* Pods_FirebaseRemoteConfig.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 417D47B2755BCFC624E10F40 /* Pods_FirebaseRemoteConfig.framework */; };
 /* End PBXBuildFile section */
 
@@ -26,6 +27,7 @@
 		4481D04727F2E0E500384E4C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4481D04A27F2E0E500384E4C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4481D04C27F2E0E500384E4C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		44C7A86827F2EC9000333062 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		8F6BCE97185F60E0F55493DF /* Pods-FirebaseRemoteConfig.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirebaseRemoteConfig.release.xcconfig"; path = "Target Support Files/Pods-FirebaseRemoteConfig/Pods-FirebaseRemoteConfig.release.xcconfig"; sourceTree = "<group>"; };
 		A60B013016D6555ED7A84959 /* Pods-FirebaseRemoteConfig.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirebaseRemoteConfig.debug.xcconfig"; path = "Target Support Files/Pods-FirebaseRemoteConfig/Pods-FirebaseRemoteConfig.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -85,6 +87,7 @@
 				4481D04027F2E0E300384E4C /* SceneDelegate.swift */,
 				4481D04727F2E0E500384E4C /* Assets.xcassets */,
 				4481D04C27F2E0E500384E4C /* Info.plist */,
+				44C7A86827F2EC9000333062 /* GoogleService-Info.plist */,
 			);
 			path = SupportFiles;
 			sourceTree = "<group>";
@@ -112,7 +115,6 @@
 				A60B013016D6555ED7A84959 /* Pods-FirebaseRemoteConfig.debug.xcconfig */,
 				8F6BCE97185F60E0F55493DF /* Pods-FirebaseRemoteConfig.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -177,6 +179,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4481D04B27F2E0E500384E4C /* LaunchScreen.storyboard in Resources */,
+				44C7A86927F2EC9000333062 /* GoogleService-Info.plist in Resources */,
 				4481D04827F2E0E500384E4C /* Assets.xcassets in Resources */,
 				4481D04627F2E0E300384E4C /* Main.storyboard in Resources */,
 			);
