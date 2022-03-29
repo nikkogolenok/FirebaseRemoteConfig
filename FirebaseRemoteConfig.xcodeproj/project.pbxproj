@@ -13,9 +13,11 @@
 		4481D04627F2E0E300384E4C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4481D04427F2E0E300384E4C /* Main.storyboard */; };
 		4481D04827F2E0E500384E4C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4481D04727F2E0E500384E4C /* Assets.xcassets */; };
 		4481D04B27F2E0E500384E4C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4481D04927F2E0E500384E4C /* LaunchScreen.storyboard */; };
+		A9B4135EC9E89C2F7933B9A3 /* Pods_FirebaseRemoteConfig.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 417D47B2755BCFC624E10F40 /* Pods_FirebaseRemoteConfig.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		417D47B2755BCFC624E10F40 /* Pods_FirebaseRemoteConfig.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FirebaseRemoteConfig.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4481D03B27F2E0E300384E4C /* FirebaseRemoteConfig.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirebaseRemoteConfig.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4481D03E27F2E0E300384E4C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4481D04027F2E0E300384E4C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +26,8 @@
 		4481D04727F2E0E500384E4C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4481D04A27F2E0E500384E4C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4481D04C27F2E0E500384E4C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8F6BCE97185F60E0F55493DF /* Pods-FirebaseRemoteConfig.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirebaseRemoteConfig.release.xcconfig"; path = "Target Support Files/Pods-FirebaseRemoteConfig/Pods-FirebaseRemoteConfig.release.xcconfig"; sourceTree = "<group>"; };
+		A60B013016D6555ED7A84959 /* Pods-FirebaseRemoteConfig.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirebaseRemoteConfig.debug.xcconfig"; path = "Target Support Files/Pods-FirebaseRemoteConfig/Pods-FirebaseRemoteConfig.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9B4135EC9E89C2F7933B9A3 /* Pods_FirebaseRemoteConfig.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1D2D22677EBE0F64D2BCF401 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				417D47B2755BCFC624E10F40 /* Pods_FirebaseRemoteConfig.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		4481D03227F2E0E300384E4C = {
 			isa = PBXGroup;
 			children = (
 				4481D03D27F2E0E300384E4C /* FirebaseRemoteConfig */,
 				4481D03C27F2E0E300384E4C /* Products */,
+				A7BC23405D022C0DD4835528 /* Pods */,
+				1D2D22677EBE0F64D2BCF401 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -91,6 +106,16 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		A7BC23405D022C0DD4835528 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A60B013016D6555ED7A84959 /* Pods-FirebaseRemoteConfig.debug.xcconfig */,
+				8F6BCE97185F60E0F55493DF /* Pods-FirebaseRemoteConfig.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -98,9 +123,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4481D04F27F2E0E500384E4C /* Build configuration list for PBXNativeTarget "FirebaseRemoteConfig" */;
 			buildPhases = (
+				72427D518A608EB954BCD7B5 /* [CP] Check Pods Manifest.lock */,
 				4481D03727F2E0E300384E4C /* Sources */,
 				4481D03827F2E0E300384E4C /* Frameworks */,
 				4481D03927F2E0E300384E4C /* Resources */,
+				A902EE3B84196D629FF24577 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -156,6 +183,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		72427D518A608EB954BCD7B5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FirebaseRemoteConfig-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A902EE3B84196D629FF24577 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FirebaseRemoteConfig/Pods-FirebaseRemoteConfig-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FirebaseRemoteConfig/Pods-FirebaseRemoteConfig-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FirebaseRemoteConfig/Pods-FirebaseRemoteConfig-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4481D03727F2E0E300384E4C /* Sources */ = {
@@ -308,6 +377,7 @@
 		};
 		4481D05027F2E0E500384E4C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A60B013016D6555ED7A84959 /* Pods-FirebaseRemoteConfig.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -336,6 +406,7 @@
 		};
 		4481D05127F2E0E500384E4C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8F6BCE97185F60E0F55493DF /* Pods-FirebaseRemoteConfig.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
